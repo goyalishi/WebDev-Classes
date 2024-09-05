@@ -1,0 +1,44 @@
+
+div{
+    height: 100px;
+    width: 100px;
+    border:1px,solid,black;
+}
+#d1{
+    background-color: brown;
+    /* flex-shrink: 1; */
+    /* flex-grow:1; */
+}
+
+#d2{
+    background-color: pink;
+}
+
+#d3{
+    background-color: green;
+}
+
+#d4{
+    background-color: greenyellow;
+}
+#d5{
+    background-color: blueviolet;
+    /* flex-basis:150px; */
+    /* flex-shrink: 2; */
+    /* flex-grow:1; */
+}
+
+section{
+    height: 600px;
+    width: 70vw;
+    background-color: lightgray;
+    border:2px,solid,black;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content:space-around; */
+    align-items:flex-end;
+    /* align-content:flex-start; */
+
+}
+

@@ -1,0 +1,60 @@
+/* article+section{
+    background-color: aqua;
+} */
+
+/* section>div:first-child::after{
+    content:'\1F4F1';    
+    font-size:50px;
+} */
+
+ /* we have use'\' backslash for U+ in unicode characters ie \1F4F1 for U+1F4F1 */
+
+ /* section>div::after{
+    content:'\1F4F1';
+    font-size:50px;
+} */
+   span::first-letter{
+     font-size:50px;        /* first-letter property will not work for span as psuedo elements                      does not work with inline elements*/
+      color:violet;  
+}  
+
+/* div::first-letter{
+    font-size:50px;
+    color:violet;
+} */
+
+/* a[href="www.google.com"]::after{
+    content:'\1F4F1';
+    font-size:50px;
+}
+
+a[href="www.google.com"]{
+    text-decoration: none;
+} */
+
+/* String Matching */
+
+/* a[href^="www"]{
+    color: brown;
+}
+
+a[href$="org"]{
+    color: hotpink;
+}
+
+a[href*="wiki"]{
+    color: orange;
+    background-color: black;
+} */
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 25px;
+    /* Shadow chaining */
+
+    text-shadow:4px 3px 3px red, 
+    5px 5px 3px blue, 
+    -3px 6px 4px yellow ,
+    -3px -3px 4px green;
+}

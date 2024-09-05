@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Practice Form-1 -->
+<form method ="get">
+<h1>
+    Event Registration
+</h1>
+<label for="name">Name:</label>
+<input autofocus="text" name="name" id="name">
+</br>
+<br/>
+
+<label for="email">Email:</label>
+<input type="email" name="email" id="email">
+</br>
+<br/>
+
+<label for="ph">Phone:</label>
+<input type="tel" name="phone" id="ph" maxlength="10">
+</br>
+<br/>
+
+<label for="occ">Occupation:</label>
+<select name="occupationType" id="occ">
+    <option value="business">Business</option>
+    <option value="govt. job">Government Emplloyee</option>
+    <option value="engineer">Engineer</option>
+    <option value="doctor">Doctor</option>
+    <option value="other" selected>Other</option>
+</select>
+</br>
+<br/>
+<fieldset>
+    <legend>Topics of Interst:</legend>
+    <input type="checkbox" name="html" id="topic1"><br/>
+    <label for="topic1">HTML</label><br/>
+    <input type="checkbox" name="css" id="topic2"><br/>
+    <label for="topic2">CSS</label><br/>
+    <input type="checkbox" name="js" id="topic3"><br/>
+    <label for="topic3">JavaScript</label><br/>
+</fieldset>
+</br>
+
+<label for="CommentSection">Comments:</label>
+<br>
+<textarea name="comments" id="CommentSection" cols="50" rows="10"></textarea>
+<input type="submit" value="Register">
+
+</form>
+
+</body>
+</html>

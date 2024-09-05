@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+<h1>
+    Job Application
+</h1>
+<label for="name" >Name:</label><br/>
+<input type="text" name="name" id="name" placeholder="enter your name">
+</br>
+<br/>
+
+<label for="email">Email:</label><br/>
+<input type="email" name="email" id="email" placeholder="abc@gmail.com">
+</br>
+<br/>
+
+<label for="ph">Phone:</label><br/>
+<input type="tel" name="phone" id="ph">
+</br>
+<br/>
+
+<label for="resumeDetails">Resume:</label><br/>
+<input type="file" name="resumeFile" id="resumeDetails">
+</br>
+
+<label for="exp">Experience(years):</label><br/>
+<input type="number" name="experience" id="exp" min="0" max="50">
+</br>
+
+<fieldset>
+    <legend>Skills:</legend>
+    <input type="checkbox" name="html" id="skill1"><br/>
+    <label for="skill1">HTML</label><br/>
+    <input type="checkbox" name="css" id="skill2"><br/>
+    <label for="skill2">CSS</label><br/>
+    <input type="checkbox" name="js" id="skill3"><br/>
+    <label for="skill3">JavaScript</label><br/>
+</fieldset>
+</br>
+
+<label for="EducDetails">Occupation:</label>
+<select name="Education" id="EducDetails">
+    <option value="HighSchool">High School</option>
+    <option value="Intermediate">Intermediate</option>
+    <option value="Graduation">Graduation</option>
+</select>
+</br>
+
+<section>Availability
+<label for="fullTime">FullTime</label>
+<input type="radio" id="fullTime" name="availCriteria">
+
+<label for="partTime">Part-Time</label>
+<input type="radio" id="partTime" name="availCriteria">
+</section>
+<br/>
+<br/>
+
+<label for="CommentSection">Additional Comments:</label>
+<br>
+<textarea name="Addcomments" id="CommentSection" cols="50" rows="10"></textarea>
+<br/>
+<input type="submit" value="Submit Application">
+
+</form>
+
+</body>
+</html>

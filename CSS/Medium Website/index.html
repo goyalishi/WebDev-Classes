@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        nav{
+            display:flex;
+        }
+
+        #nav-container{
+            margin-top: 50px;
+            display:flex;
+            justify-content: space-around;
+            border-bottom: 1px solid black;
+            width:95vw;
+            align-items:center;
+            height: 15vh;
+
+        }
+        #icon{
+            height: 70px;
+            width: 200px;
+                   }
+
+        #link-cont{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:25px;
+        }
+
+        li{
+            list-style: none;
+            font-size: 20px;
+        }
+        ul{
+            display:flex;
+            gap:30px;
+
+        }
+
+        button{
+            background-color: black;
+            color:white;
+            border-radius:20px;
+            height: 40px;
+            padding:0 5px 0 5px;
+            cursor: pointer;
+        }
+        #main{
+            width: 100vw;
+            border-bottom: 1px solid black;
+        }
+
+        .container{
+            display:flex;
+            /* gap:25px; */
+            height: 70vh;
+            width: 100vw;
+            margin-bottom: 40px;
+            justify-content: space-between;
+            
+        }
+
+        .content-cont{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            align-items: flex-start;
+            padding-left: 100px;
+            width: 50vw;
+        
+            
+        }
+
+        h1{
+            font-size: 5rem;
+            text-wrap:wrap;
+        }
+
+        p{
+            font-size: 25px;
+        }
+
+        #start{
+            background-color: black;
+            color:white;
+            border-radius:20px;
+            height: 40px;
+            padding:0 5px 0 5px;
+            cursor: pointer;
+        }
+
+        .image{
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            width: 50vw;
+
+        }
+        .image>img{
+            width: 100%;
+        }
+        a{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav id="nav-bar">
+        <div id="nav-container">
+            <img id="icon" src="https://miro.medium.com/v2/resize:fit:8978/1*s986xIGqhfsN8U--09_AdA.png" alt="medium icon">
+            <div id="link-cont">
+            <ul>
+                <li><a>Our story</a></li>
+                <li><a>Membership</a></li>
+                <li><a>Write</a></li>
+                <li><a>Sign in</a></li>
+            </ul>
+            <button>Get Started</button>
+        </div>
+        </div>
+    </nav>
+
+    <div id="main">
+        <div class="container">
+            <div class="content-cont">
+                <h1>Human Stories & Ideas</h1>
+                <p>A place to read,write, abd deepen your understanding</p>
+                <button id="start">Start Reading</button>
+            </div>
+            <div class="image">
+                <img src="https://miro.medium.com/v2/format:webp/4*SdjkdS98aKH76I8eD0_qjw.png">
+            </div>
+
+        </div>
+    
+        </div>
+</body>
+</html>

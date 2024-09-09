@@ -1,0 +1,35 @@
+.main{
+    border: 2px solid red;
+    height: 1300px;
+    width: 700px;
+    padding:50px;
+
+}
+
+.container{
+    border: 2px solid green;
+    height: 70%;
+    width: 80%;
+    position: relative;
+    
+
+}
+
+#item1,#item2,#item3{
+    height: 100px;
+    width: 100px;
+    border: 3px solid blue;
+    background-color: cadetblue;
+    opacity: 0.5;
+    
+}
+
+#item2{
+position: absolute;
+}
+
+#item3{
+    position: fixed;
+    top:30px;
+    left:50%;
+}

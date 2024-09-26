@@ -42,5 +42,3 @@ let val1;
 val1=undefined ?? 15
 
 console.log(val1);
-
-

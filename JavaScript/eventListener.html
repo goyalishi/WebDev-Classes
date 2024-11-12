@@ -1,0 +1,59 @@
+ <!-- READ about the following related to events: -->
+ <!-- type, timestamp, preventDefault -->
+<!-- target, toElement, srcElement -->
+ <!-- clientX, clientY, screenX, screenY -->
+ <!-- altkey, ctrlkey , shiftkey, keyCode -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    
+    <h1>Event Listener</h1>
+    <div>
+        <ul id="images">
+            <li><img src="https://images.unsplash.com/photo-1723987513819-bafdc1b3dc13?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D" width="200px" id="gem" alt=""></li>
+            <li><img src="https://images.unsplash.com/photo-1724250267025-08b545ab90dc?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1NHx8fGVufDB8fHx8fA%3D%3D" width="200px" id="nature" alt=""></li>
+        </ul>
+    </div>
+</body>
+
+<script>
+
+    // Event Bubbling
+    // ie when image of nature id is clicked then since it is inside the ul so both event listeners should trigger but it bubbles up from target ie from nature then the ul one is triggered
+    
+    // document.getElementById('images').addEventListener('click',function(){
+    //     console.log("click inside the ul");
+        
+    // },false)
+    // document.getElementById('nature').addEventListener('click',function(){
+    //     console.log("nature clicked");
+        
+    // },false);
+
+    //e.stop propagation
+    // By default, all event handlers are registered in the bubbling phase (from the target element to all its ancestor elements). This default configuration can be modified by adding the event.stopPropagation method to the target element
+    // iie if owl is clicked then only "owl clicked " will be printed anf then propagatin will stop from bubbling up
+
+    //Event Capturing 
+//    Event capturing occurs when a nested element gets clicked. The click event of its parent elements must be triggered before the click of the nested element. This phase trickles down from the top of the DOM tree to the target element.  
+
+// Event capturing can't happen until the third argument of addEventListener is set to the Boolean value of true as shown below (default value is false).
+
+    document.getElementById('images').addEventListener('click',function(){
+        console.log("click inside the ul");
+        
+    },true)
+    document.getElementById('nature').addEventListener('click',function(){
+        console.log("nature clicked");
+        
+    },true);
+</script>
+</html>
